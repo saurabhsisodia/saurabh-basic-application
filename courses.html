@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Courses list</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body{
+                background-color:unset;
+            }
+            
+            .popover {
+                background:rosybrown
+            }
+        </style>
+    </head>
+    <body>
+      <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Learn Scripts</a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link" data-toggle="tooltip" title="You have to click to Login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="registration.html" class="nav-link" data-toggle="tooltip" title="Please click to Register"
+                     data-placement="right">
+                        Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link" data-toggle="tooltip" title="List of all the courses"
+                    >Courses</a>
+                </li>
+                <li class="nav-item" >
+                    <button  class="btn btn-primary" data-toggle="modal" data-target="#my-modal-id">
+                        Feedback
+                    </button>
+                </li>
+            </ul>
+            <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" 
+            data-toggle="popover" title="Thanks" data-content="We will Notify you for upcoming Courses"
+                 data-placement="left">Follow Us</button>
+        </div>
+    </div>  <!--navbar div ends here -->
+
+    <!--modal creation for Feedback-->
+    <div class="modal fade" id="my-modal-id">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" >Give Your Valuable Feedback</h5>
+                  <button class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div><!--header ends here-->
+
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <input type="email" class="form-control" id="email" placeholder="Your Email">
+                      </div>
+                      <div class="form-group">
+                          <textarea class="form-control" id="textarea" rows="3" colrs="40" placeholder="Your Feedback"></textarea>
+                      </div>
+                  </form>
+              </div>
+
+              <div class="modal-footer">
+                  <button class="btn btn-primary">Send</button>
+                  <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              </div>
+
+          </div>
+      </div>
+  </div> <!--modal ends here -->
+
+
+        <table class="table table-hover table-bordered thead-inverse my-table">
+            <thead>
+              <tr>
+                <th scope="col-md-3">Course Id</th>
+                <th scope="col-md-3">Course Name</th>
+                <th scope="col-md-3">Description</th>
+                <th scope="col-md-3">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Javascript</td>
+                <td>Javascript for beginners</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Typescript</td>
+                <td>Basics of Typescript</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td >Python</td>
+                <td>Python Beginner to Advance</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td >Go</td>
+                <td>The most promising Language</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td >Java</td>
+                <td>Java for Beginners</td>
+                <td>$0</td>
+              </tr>
+            </tbody>
+
+          </table>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+                })
+
+                // $('[data-toggle="tooltip"]').on('inserted.bs.tooltip',function () {
+                //      var thisClass = $(this).attr("class");
+                //     $('.tooltip-inner').addClass(thisClass);
+                //     $('.arrow').addClass(thisClass + "-arrow");
+                // });
+
+                $(function () {
+                $('[data-toggle="popover"]').popover()
+                        })
+        </script>
+    </body>
+</html>

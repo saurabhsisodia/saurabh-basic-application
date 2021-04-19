@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .popover {
+                background:rosybrown
+            }
+        </style>
+    </head>
+    <body>
+            <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="index.html" class="navbar-brand">Learn Scripts</a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link" data-toggle="tooltip" title="You have to click to Login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="registration.html" class="nav-link" data-toggle="tooltip" title="Please click to Register"
+                             data-placement="right">
+                                Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link" data-toggle="tooltip" title="List of all the courses"
+                            >Courses</a>
+                        </li>
+                        <li class="nav-item" >
+                            <button  class="btn btn-primary" data-toggle="modal" data-target="#my-modal-id">
+                                Feedback
+                            </button>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" 
+                    data-toggle="popover" title="Thanks" data-content="We will Notify you for upcoming Courses"
+                         data-placement="left">Follow Us</button>
+                </div>
+            </div>  <!--navbar div ends here -->
+
+
+            <!--modal creation for Feedback-->
+            <div class="modal fade" id="my-modal-id">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" >Give Your Valuable Feedback</h5>
+                            <button class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!--header ends here-->
+
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="textarea" rows="3" colrs="40" placeholder="Your Feedback"></textarea>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">Send</button>
+                            <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!--modal ends here -->
+
+
+            <div class="container my-container">
+
+                <div class="row my-row">
+
+                    <div class="col-md-4 col-sm-3  my-col">
+                        <strong>Typescript</strong>
+                        <p>TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. TypeScript is designed for the development of large applications and transcompiles to JavaScript.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>Javascript</strong>
+                        <p>JavaScript is an implementation of the ECMA-262 standard that defines the ECMAScript (ES) general-purpose scripting language. In other words, JavaScript is a dialect of the ECMAScript language, therefore it doesn’t have a standalone specification but uses the same syntax as ECMAScript.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>Bash Script</strong>
+                        <p>Bash is the name of both a command-line interpreter (shell) for the GNU operating system and the belonging scripting language. ‘Linux’ is, in fact, the GNU operating system using the Linux kernel (a kernel is the core part of the OS, it’s the first program that the operating system loads).</p>
+                    </div>
+                </div> <!--first row ends here-->
+
+                <div class="row my-row">
+
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>ECMAScript</strong>
+                        <p>ECMAScript is a general-purpose programming language, standardised by Ecma International according to the document ECMA-262. It is a JavaScript standard meant to ensure the interoperability of Web pages across different Web browsers.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>Python</strong>
+                        <p>Python is a free and open source project, managed by the Python Software Foundation. It supports the structured, object-oriented, and functional programming paradigms, and has an extensive Standard Library that is a collection of commonly used Python modules.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>Ruby</strong>
+                        <p>Ruby is an open source, general-purpose scripting language with a compact and easy-to-read syntax. It follows the principles of object-oriented programming and lets you write clean and logical code, making it one of the easiest programming language to learn. In Ruby, everything is an object — even types that are primitives in most languages, such as booleans and integers.</p>
+                    </div>
+
+                </div> <!--second row ends here-->
+
+                <div class="row my-row">
+
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>Groovy</strong>
+                        <p>Groovy is an incredible flexible language written for the Java Virtual Machine (JVM) that can be used both as a scripting and programming language. It’s an open source project maintained by the Apache Software Foundation. Groovy is an object-oriented language that extends the java.lang.Object superclass.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>Perl</strong>
+                        <p>Perl is a general-purpose scripting language that’s been around for more than thirty years (since 1987). Originally, it was created as a UNIX scripting language for report processing. That’s also where its name comes from, as the Perl acronym standing for ‘Practical Extraction and Reporting Language’.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-3 my-col">
+                        <strong>Lisp</strong>
+                        <p>Lisp is a family of programming languages with a long history and a distinctive, fully parenthesized prefix notation. Originally specified in 1958, Lisp is the second-oldest high-level programming language in widespread use today. Only Fortran is older, by one year.</p>
+                    </div>
+
+                </div> <!--third row ends here-->
+
+            </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+                })
+
+                // $('[data-toggle="tooltip"]').on('inserted.bs.tooltip',function () {
+                //      var thisClass = $(this).attr("class");
+                //     $('.tooltip-inner').addClass(thisClass);
+                //     $('.arrow').addClass(thisClass + "-arrow");
+                // });
+
+                $(function () {
+                $('[data-toggle="popover"]').popover()
+                        })
+        </script>
+    </body>
+</html>
