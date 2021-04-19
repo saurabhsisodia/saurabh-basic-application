@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;ECSH,MAAM,EAAC,eAAmB;;ADJ9B,OAAO;ECIH,MAAM,EAAC,eAAmB;;ADA9B,UAAU;EACN,gBAAgB,EAAE,SAAS",
+"sources": ["base.scss","variables.scss"],
+"names": [],
+"file": "layout.css"
+}

@@ -1,0 +1,11 @@
+
+
+
+// creating mixins
+@mixin my-row($height) {
+    height: $height;
+}
+
+@mixin border($width,$color) {
+    border:$width solid $color;
+}
